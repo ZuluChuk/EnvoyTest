@@ -6,14 +6,10 @@ It uses Node and npm modules to setup localserver.
 ## Fork the repository
 This repository is read only so to push your changes you'll need to fork it.
 
-* In Bitbucket for this repo click the 3 dots (...) in the top left and choose Fork.
-* In your forked repo click the repositoy settings cog (bottom left) and choose User and group access
-Give read access to `lukaszpietraszek` and `timhillman`
-* Try to have a least one commit per task so that we can see the work progress
-Use descriptive commit comments
-* It's up to you whether you want to push regularly or once you are finished with all of your commits
-* Bootstrap 3 and jQuery are already added in each HTML file
-* Use Less preprocessor to style it main.less file is already included in less folder
+* In Bitbucket click the `+` button on the left hand navigation
+* In the _GET TO WORK_ section, choose _Fork this repository_
+* In your forked repo click the _Settings_ cog in the left hand navigation and choose _General_ / _User and group access_
+  Give read access to `lukaszpietraszek` and `timhillman`
 
 ## Getting Started
 The project is a Node project. 
@@ -29,6 +25,13 @@ Start up the server by running
 Now you should have access to local server at: `http://127.0.0.1:8080/`
 
 It will watch for all the changes in less folder - however it won't auto-reload your browser.
+
+## Tips
+* Try to have a least one commit per task so that we can see the work progress
+Use descriptive commit comments
+* It's up to you whether you want to push regularly or once you are finished with all of your commits
+* Bootstrap 3 and jQuery are already added in each HTML file
+* Use Less preprocessor to style it main.less file is already included in less folder
 
 ## Tasks
 ### 1. Create product list page
