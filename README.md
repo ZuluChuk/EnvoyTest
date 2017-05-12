@@ -41,7 +41,7 @@ Use descriptive commit comments
 * It should be fully responsive
 ### 2. Create Product details page
 * Use `product.html` file
-* Implement 2 column layout for desktop and 1 column layout for mobile
+* Implement 2 column (70% and 30% width)layout for desktop and 1 column layout for mobile
 * Under main image add a carousel with thumbnails. (you can use same images as on PLP)
 * On click of thumbnail main image should be replaced with clicked image
 * Smaller column should contain product details such us: price, stock level, and add to basket button
