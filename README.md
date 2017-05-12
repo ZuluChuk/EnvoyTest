@@ -5,6 +5,7 @@ It uses Node and npm modules to setup localserver.
 
 ## Fork the repository
 This repository is read only so to push your changes you'll need to fork it.
+
 * In Bitbucket for this repo click the 3 dots (...) in the top left and choose Fork.
 * In your forked repo click the repositoy settings cog (bottom left) and choose User and group access
 Give read access to `lukaszpietraszek` and `timhillman`
