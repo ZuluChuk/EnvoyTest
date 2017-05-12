@@ -1,0 +1,21 @@
+{
+  "name": "fedtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-less": "./node_modules/less/bin/lessc less/main.less css/main.css",
+    "watch-less": "nodemon --watch /less/*.less --ext less --exec 'npm run build-less'",
+    "server": "nodemon ./node_modules/http-server/bin/http-server",
+    "start": "npm run server & npm run watch-less"
+  },
+  "author": "Envoy Digital",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.10.0",
+    "less": "^2.7.2",
+    "less-watch-compiler": "^1.4.2",
+    "nodemon": "^1.11.0",
+    "watchify": "^3.9.0"
+  }
+}
