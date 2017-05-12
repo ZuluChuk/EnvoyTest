@@ -35,7 +35,10 @@ Use descriptive commit comments
 
 ## Tasks
 ### 1. Create product list page
-* Create a page with at least 3 products
+* Create a full width page with a header, a footer and a main section in index.html.
+*The main section should contain a content section and a sidebar. 
+* Set the width of the content section to 70% and the sidebar section to 30%. 
+* Content section should be populated with at least 3 products using grid view
 * For each product include image thumbnail, product name, product price and 'view more' button - linked to `product.html` 
 * Images are located in img folder
 * It should be fully responsive
