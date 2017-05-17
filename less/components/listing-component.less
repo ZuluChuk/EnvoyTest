@@ -1,0 +1,38 @@
+.product-list-component{
+	display: block;
+	.product{
+		position: relative;
+		img{
+			width: 100%;
+		}
+		.product-details{
+			padding: 1em;
+			width: 100%;
+			display: inline-block;
+			background-color: @color5;
+			&:hover{
+				opacity: 0.8;
+			}
+			h2{
+				margin: 0 0 0.5em 0;
+				font-size: 1.5em;
+				text-align: center;
+				color: @color2;
+			}
+			p{
+				font-size: 1em;
+				color: @color3;
+				float: left;
+				display: block;
+				a{
+					color: @color3;
+				}
+			}
+			button{
+				.main-button;
+				float: right;
+				display: block;
+			}
+		}
+	}
+}
