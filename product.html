@@ -27,8 +27,8 @@
 			    </div>
 			    <div class="collapse navbar-collapse" role="navigation" id="envoy-nav">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="/index.html">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="/product.html">Product</a></li>
+						<li><a href="/index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="/product.html">Product</a></li>
 						<li><a href="/about.html">About</a></li>
 					</ul>
 				</div>	
@@ -36,11 +36,26 @@
 		</nav>
 	</header>
 	<main class="container">
-		<section class="col-xs-30 col-sm-15 col-md-21 row product-image">
+		<section class="col-xs-30 col-sm-15 col-md-21 row">
+			<div class="product-image col-xs-30">
+				<img class="js-main-image" src="img/img-1.jpg" alt="main image"/>
+				<ul class="row">
+					<li class="col-xs-10 js-thumb thumb active"><img src="img/img-1.jpg" alt="thumb image"/></li>
+					<li class="col-xs-10 js-thumb thumb"><img src="img/img-2.jpg" alt="thumb image"/></li>
+					<li class="col-xs-10 js-thumb thumb"><img src="img/img-3.jpg" alt="thumb image"/></li>
+				</ul>
+			</div>
 		</section>
 		<aside class="col-xs-30 col-sm-15 col-md-9 sidebar">
 			<section class=product-details>
-				
+				<h2>Product 1</h2>
+				<p>
+					The great outdoors
+				</p>
+				<p class="checkout">
+					£9.99 <sup> 9 in stock</sup>
+					<button onclick="checkout()" >Buy Now</button>
+				</p>
 			</section>	
 		</aside>
 	</main>
@@ -56,5 +71,6 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
   crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
 
 </html>
