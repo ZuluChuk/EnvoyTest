@@ -32,6 +32,7 @@ Use descriptive commit comments
 * It's up to you whether you want to push regularly or once you are finished with all of your commits
 * Bootstrap 3 and jQuery are already added in each HTML file
 * Use Less preprocessor to style it main.less file is already included in less folder
+* Bare in mind performance and site loading time
 
 ## Tasks
 ### 1. Create product list page
