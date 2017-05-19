@@ -54,10 +54,10 @@ Use descriptive commit comments
 ### 3. Add Accordion to PDP using content populated via AJAX
 * Demonstrate that you understand Git branching by creating a new feature branch with a descriptive name.
 * Add some FAQ data to `faq.json` located in data folder 
-* Use `product.html` same file as used in task#2 
+* Use `product.html` (same file as used in task#2) - and place accordion it in the smaller of two columns
 * Create accordion with FAQ about product in form of accordion - headings and content of each item should be populated dynamically using `faq.json` file
 * By default all answers should be collapsed
-on click of question - accordion should open answer and collapse previously opened questions if any
+* On click on question - accordion should open answer and collapse previously opened questions if any opened
 * Create a pull request for this branch
 ## Finished
 Once you've completed the above, please email `stephanie.wilson@envoydigital.com` so that we know your work is ready to be reviewed.
