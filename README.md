@@ -53,7 +53,7 @@ Use descriptive commit comments
 * Smaller column should contain product details such us: price, stock level, and add to basket button
 ### 3. Add Accordion to PDP using content populated via AJAX
 * Demonstrate that you understand Git branching by creating a new feature branch with a descriptive name.
-* Add some FAQ data to `products.json` located in data folder 
+* Add some FAQ data to `faq.json` located in data folder 
 * Use `product.html` same file as used in task#2 
 * Create accordion with FAQ about product in form of accordion - content should be populated from `products.json`
 * By default all answers should be collapsed
