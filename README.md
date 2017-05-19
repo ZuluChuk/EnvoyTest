@@ -26,6 +26,8 @@ Now you should have access to local server at: `http://127.0.0.1:8080/`
 
 It will watch for all the changes in less folder - however it won't auto-reload your browser.
 
+**There is no need to install Grunt/Gulp/Webpack**
+
 ## Tips
 * Try to have a least one commit per task so that we can see the work progress
 Use descriptive commit comments
