@@ -30,14 +30,16 @@ jQuery(document).ready(function(){
 
     function DisplayFAQ() {
         var jsontitle = "",
-        	jsonquestion = "";
+        	jsonquestion = "",
+        	qid = "";
         console.log("writing" + questions);
         $.each(questions, function (i, q) {
         	if(i == "title"){
         		jsontitle += "<h3>"+ q + "</h3>";
         	} else if(i == "faqs"){
         		$.each(q, function(i, a){
-        			jsonquestion += "<li class='js-showAnswer'>"+ a.question + "</li>";
+        			qid = i;
+        			jsonquestion += "<li data-qid="+ qid +" class='js-showAnswer'>"+ a.question + "</li>";
         		});
         	}   
         });
@@ -45,7 +47,24 @@ jQuery(document).ready(function(){
         $(jsonquestion).appendTo("#faq ul");
     }
 
-    $(".js-showAnswer").click(function(){
-    	
-    });
+    //had to use on for ajax event over click
+	$(document).on("click",".js-showAnswer",function(e){
+		if($(this).children().length > 0 ){
+			console.log("ping");
+			$(this).find(".js-answer").toggle();
+		}else{
+			var dataID = $(this).data("qid"),
+			jsonanswer = "";
+			$.each(questions, function (i, q) {
+				if(i == "faqs"){
+					$.each(q, function(i, a){
+	        			if (i == dataID){
+	        				jsonanswer = "<ul class='js-answer'><li>" + a.answer +"</li></ul>";
+	        			}
+	        		});
+				}
+			});
+			$(jsonanswer).appendTo($(this)).show("slow");
+		}
+	});
 });
