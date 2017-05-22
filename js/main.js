@@ -18,7 +18,6 @@ jQuery(document).ready(function(){
         data: "",
         success: function (result) {
             questions = result;
-            console.log(result);
             DisplayFAQ();
         },
         error: function (xhr, ajaxOptions, thrownError) {
@@ -32,7 +31,6 @@ jQuery(document).ready(function(){
         var jsontitle = "",
         	jsonquestion = "",
         	qid = "";
-        console.log("writing" + questions);
         $.each(questions, function (i, q) {
         	if(i == "title"){
         		jsontitle += "<h3>"+ q + "</h3>";
@@ -50,7 +48,6 @@ jQuery(document).ready(function(){
     //had to use on for ajax event over click
 	$(document).on("click",".js-showAnswer",function(e){
 		if($(this).children().length > 0 ){
-			console.log("ping");
 			$(this).find(".js-answer").toggle();
 		}else{
 			var dataID = $(this).data("qid"),
