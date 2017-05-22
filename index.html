@@ -13,6 +13,71 @@
 </head>
 
 <body>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!--menu for mobile view-->
+				<div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#envoy-nav" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">UI Test</a>
+			    </div>
+			    <div class="collapse navbar-collapse" role="navigation" id="envoy-nav">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="/product.html">Product</a></li>
+						<li><a href="/about.html">About</a></li>
+					</ul>
+				</div>	
+			</div>
+		</nav>
+	</header>
+	<main class="container">
+		<div class="intro component col-xs-30">
+				<h1>Envoy FE test</h1>
+				<p>Welcome to the envoy test please take a look at the about page to find out how this was made</p>
+		</div>
+		<section class="col-xs-30 col-sm-15 col-md-21 product-list-component">
+			<div class="col-xs-30 col-sm-15 col-md-10 product">
+				<img src="img/img-1.jpg" alt="product 1"/>
+				<div class="product-details">
+					<a href="/product.html"><h2>product name</h2></a>
+					<p><a href="/product.html">&pound;price</a></p>
+					<button onclick="window.location.href='/product.html'">view more</button>
+				</div>
+			</div>
+			<div class="col-xs-30 col-sm-15 col-md-10 product">
+				<img src="img/img-2.jpg" alt="product 1"/>
+				<div class="product-details">
+					<a href="/product.html"><h2>product name</h2></a>
+					<p><a href="/product.html">&pound;price</a></p>
+					<button onclick="window.location.href='/product.html'">view more</button>
+				</div>
+			</div>
+			<div class="col-xs-30 col-sm-15 col-md-10 product">
+				<img src="img/img-3.jpg" alt="product 1"/>
+				<div class="product-details">
+					<a href="/product.html"><h2>product name</h2></a>
+					<p><a href="/product.html">&pound;price</a></p>
+					<button onclick="window.location.href='/product.html'">view more</button>
+				</div>
+			</div>
+		</section>
+		<aside class="col-xs-30 col-sm-15 col-md-9">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida, ex non ultricies faucibus, mauris justo tristique enim, ac volutpat nisi purus at dui. Nulla vitae ultricies massa, at finibus velit. Pellentesque ut rutrum arcu. Aliquam at lacus aliquet nibh efficitur ornare dapibus eget nisl. Fusce pharetra augue odio, a malesuada metus porta sed. Duis pellentesque ex a nibh eleifend, at faucibus quam dignissim. Sed mauris lorem, scelerisque et egestas a, scelerisque vitae mauris. Nulla in magna in felis faucibus efficitur. Fusce nisi dolor, molestie et placerat a, rutrum eu metus. Donec nibh magna, pulvinar id vulputate vel, ultrices sit amet enim.
+			</p>	
+		</aside>
+	</main>
+	<footer class="footer container">
+		<div class="col-xs-30">
+			<p>All rights reserved Stephen Rado 07926159350 or <a href="mailto:stejay@therados.net">email me</a></p>
+		</div>
+	</footer>
 </body>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

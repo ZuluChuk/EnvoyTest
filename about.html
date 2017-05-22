@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>PDP - Product details page</title>
+  <title>PLP - product listing page</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="/css/main.css">
 
@@ -27,8 +27,8 @@
 			    </div>
 			    <div class="collapse navbar-collapse" role="navigation" id="envoy-nav">
 					<ul class="nav navbar-nav">
-						<li><a href="/index.html">Home <span class="sr-only">(current)</span></a></li>
-						<li class="active"><a href="/product.html">Product</a></li>
+						<li class="active"><a href="/index.html">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="/product.html">Product</a></li>
 						<li><a href="/about.html">About</a></li>
 					</ul>
 				</div>	
@@ -36,36 +36,16 @@
 		</nav>
 	</header>
 	<main class="container">
-		<section class="col-xs-30 col-sm-15 col-md-21 row">
-			<div class="product-image col-xs-30">
-				<img class="js-main-image" src="img/img-1.jpg" alt="main image"/>
-				<ul class="row">
-					<li class="col-xs-10 js-thumb thumb active"><img src="img/img-1.jpg" alt="thumb image"/></li>
-					<li class="col-xs-10 js-thumb thumb"><img src="img/img-2.jpg" alt="thumb image"/></li>
-					<li class="col-xs-10 js-thumb thumb"><img src="img/img-3.jpg" alt="thumb image"/></li>
-				</ul>
-			</div>
+		<section class="dev-notes">
+			<h1>Developer Notes</h1>
+			<h2>Ex1</h2>
+			<p>First task was rather straight forward the main thing I changed was building bootstrap so I could change was the columns to a 30 grid from a 12 to get the 70 30 split as per the design spec.</p>
+			<h2>Ex2</h2>
+			<p>I created the image gallery here it works through mobile and desktop, an inhancement would be to use a service like <a href="http://cloudinary.com/">cloudinary</a> so you could load image dependent on the view port and save on download size</p>
+			<h2>Ex3</h2>
+			<p>I fould the hardest part of this was creating the json as I dont have that much experience creating good json structure as most of the time I get that delivered from backend. I made it so that the answers would only load once the question is click for speed though this is so small that i dont think it would matter much for this aplication</p>
+
 		</section>
-		<aside class="col-xs-30 col-sm-15 col-md-9 sidebar">
-			<section class="row product-details">
-				<div class="col-xs-30">
-					<h2>Product 1</h2>
-					<p>
-						The great outdoors
-					</p>
-					<p class="checkout">
-						£9.99 <sup> 9 in stock</sup>
-						<button onclick="checkout()" >Buy Now</button>
-					</p>
-				</div>
-			</section>	
-			<section class="faq-component row">
-				<div class="col-xs-30" id="faq">
-					<ul class="list-unstyled">
-					</ul>
-				</div>
-			</section>
-		</aside>
 	</main>
 	<footer class="footer">
 		<div class="container">
@@ -79,6 +59,5 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
   crossorigin="anonymous"></script>
-<script src="/js/main.js"></script>
 
 </html>
