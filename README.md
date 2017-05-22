@@ -26,6 +26,8 @@ Now you should have access to local server at: `http://127.0.0.1:8080/`
 
 It will watch for all the changes in less folder - however it won't auto-reload your browser.
 
+**There is no need to install Grunt/Gulp/Webpack**
+
 ## Tips
 * Try to have a least one commit per task so that we can see the work progress
 Use descriptive commit comments
@@ -51,11 +53,11 @@ Use descriptive commit comments
 * Smaller column should contain product details such us: price, stock level, and add to basket button
 ### 3. Add Accordion to PDP using content populated via AJAX
 * Demonstrate that you understand Git branching by creating a new feature branch with a descriptive name.
-* Add some FAQ data to `products.json` located in data folder 
-* Use `product.html` same file as used in task#2 
-* Create accordion with FAQ about product in form of accordion - content should be populated from `products.json`
+* Add some FAQ data to `faq.json` located in data folder 
+* Use `product.html` (same file as used in task#2) - and place accordion it in the smaller of two columns
+* Create accordion with FAQ about product in form of accordion - headings and content of each item should be populated dynamically using `faq.json` file
 * By default all answers should be collapsed
-on click of question - accordion should open answer and collapse previously opened questions if any
+* On click on question - accordion should open answer and collapse previously opened questions if any opened
 * Create a pull request for this branch
 ## Finished
 Once you've completed the above, please email `stephanie.wilson@envoydigital.com` so that we know your work is ready to be reviewed.
